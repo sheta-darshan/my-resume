@@ -8,47 +8,98 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
+            padding: 20px 0;
         }
         .resume-header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         .resume-header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        .resume-header h1 {
+            margin-top: 20px;
+            font-size: 32px;
             color: #007bff;
-        }
-        h3 {
-            color: #343a40;
-            margin-bottom: 10px;
+            font-weight: bold;
         }
         .contact-info p {
             margin: 0;
             color: #555;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
         .resume-section {
             margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+        p, ul {
+            font-size: 16px;
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills-section {
+            columns: 2;
+        }
+        .skills-section ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .skills-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .skills-section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-size: 18px;
+        }
+        .it-skills ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .it-skills li:before {
+            content: "•";
+            color: #007bff;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<div class="container mt-4">
+<div class="container">
     <div class="resume-header">
         <img src="./photo.jpeg" alt="Profile Photo">
         <h1>Darshankumar Raghavjibhai Sheta</h1>
@@ -60,84 +111,77 @@
     </div>
 
     <div class="resume-section">
-        <h2>SUMMARY</h2>
-        <p>Detail-oriented and motivated professional with a robust background in accounting, now transitioning into software engineering. Proven expertise in financial reporting, process optimization, and system implementation. Currently advancing skills through the Meta Back-End Developer Professional Certificate, Software Development Lifecycle course, and Data Structures and Algorithms training. Eager to contribute and grow as a software engineer through a part-time or full-time internship/job in the IT sector.</p>
+        <h2>Summary</h2>
+        <p>A detail-oriented professional transitioning from accounting to software engineering. With expertise in financial reporting, process optimization, and system implementation, I'm currently advancing my skills in software development through courses like the Meta Back-End Developer Professional Certificate and training in Data Structures and Algorithms. I'm eager to contribute and grow as a software engineer through a part-time or full-time role in the IT sector.</p>
     </div>
 
     <div class="resume-section">
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
         <h3>WAOU - WORK AS ONE UNIT | Full-Stack Developer</h3>
-        <p>Developed a cutting-edge remote work collaboration platform utilizing Django for backend development and HTML for the frontend. Achieved successful implementation of user authentication, authorization, and task management features. The platform is designed to enhance productivity in remote teams, with future developments planned for real-time chat, document sharing, and video conferencing. Ongoing project with a focus on expanding capabilities to boost team collaboration.</p>
-        <p><strong>GitHub Link:</strong> <a href="https://github.com/sheta-darshan/WAOU-WORK_AS_ONE_UNIT" target="_blank">WAOU-WORK_AS_ONE_UNIT</a></p>
+        <p>Developed a remote work collaboration platform using Django for the backend and HTML for the frontend. Implemented user authentication, authorization, and task management features. Designed to boost productivity in remote teams, with ongoing development for real-time chat, document sharing, and video conferencing. <br><strong>GitHub:</strong> <a href="https://github.com/sheta-darshan/WAOU-WORK_AS_ONE_UNIT" target="_blank">WAOU-WORK_AS_ONE_UNIT</a></p>
     </div>
 
     <div class="resume-section">
-        <h2>EDUCATION</h2>
+        <h2>Education</h2>
         <h3>M.Com in Financial and Management Accounting</h3>
-        <p>Veer Narmad South Gujarat University • Surat, India | Oct 2011 - Apr 2013</p>
+        <p>Veer Narmad South Gujarat University, Surat, India | Oct 2011 - Apr 2013</p>
         <h3>B.Com in Accounting</h3>
-        <p>Veer Narmad South Gujarat University • Surat, India | Jun 2007 - Mar 2010</p>
+        <p>Veer Narmad South Gujarat University, Surat, India | Jun 2007 - Mar 2010</p>
     </div>
 
     <div class="resume-section">
-        <h2>CERTIFICATIONS</h2>
+        <h2>Certifications</h2>
         <ul>
-            <li>Microsoft Certified: Azure Fundamentals - Microsoft (Nov 2022)</li>
-            <li>Microsoft Certified: Azure AI Fundamentals - Microsoft (Dec 2022)</li>
-            <li>Microsoft Certified: Azure Data Fundamentals - Microsoft (Dec 2022)</li>
-            <li>Microsoft Certified: Azure Data Engineer Associate - Microsoft (Feb 2023 – Expires Feb 2025)</li>
-            <li>Meta Back-End Developer Professional Certificate (In Progress)</li>
+            <li>Microsoft Certified: Azure Fundamentals - Nov 2022</li>
+            <li>Microsoft Certified: Azure AI Fundamentals - Dec 2022</li>
+            <li>Microsoft Certified: Azure Data Fundamentals - Dec 2022</li>
+            <li>Microsoft Certified: Azure Data Engineer Associate - Feb 2023 (Expires Feb 2025)</li>
+            <li>Meta Back-End Developer Professional Certificate - In Progress</li>
         </ul>
     </div>
 
     <div class="resume-section">
-        <h2>WORK EXPERIENCE</h2>
+        <h2>Work Experience</h2>
         <h3>Accounting Manager | Neelkanth Gems | Surat</h3>
         <p>Aug 2020 - Present</p>
         <ul>
-            <li>Led a team in managing and optimizing financial operations, resulting in improved accuracy and efficiency.</li>
-            <li>Spearheaded the preparation of financial statements, reports, and budgets, ensuring full regulatory compliance.</li>
-            <li>Mentored junior staff and played a pivotal role in implementing advanced accounting software.</li>
+            <li>Led a team to manage and optimize financial operations, improving accuracy and efficiency.</li>
+            <li>Prepared financial statements, reports, and budgets, ensuring compliance with regulations.</li>
+            <li>Mentored junior staff and implemented advanced accounting software systems.</li>
         </ul>
 
         <h3>Accounting Executive | Neelkanth Gems | Surat</h3>
         <p>Apr 2016 - Jul 2020</p>
         <ul>
-            <li>Assisted senior accountants with the preparation of financial statements and conducted thorough audit procedures.</li>
-            <li>Provided support in tax preparation, reviewed financial reports, and maintained meticulous bookkeeping records.</li>
+            <li>Assisted in preparing financial statements and conducted thorough audit procedures.</li>
+            <li>Supported tax preparation, reviewed financial reports, and maintained meticulous bookkeeping records.</li>
         </ul>
     </div>
 
     <div class="resume-section">
-        <h2>SKILLS</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <ul>
-                    <li>Financial Management</li>
-                    <li>ERP Software</li>
-                    <li>Attention to Detail</li>
-                    <li>Organization and Time Management</li>
-                    <li>Teamwork and Leadership</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <ul>
-                    <li>Analytical Thinking</li>
-                    <li>Communication and Collaboration</li>
-                    <li>Ethical Standards</li>
-                    <li>Problem-solving</li>
-                    <li>Adaptability</li>
-                </ul>
-            </div>
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <ul>
+                <li>Financial Management</li>
+                <li>ERP Software</li>
+                <li>Attention to Detail</li>
+                <li>Organization and Time Management</li>
+                <li>Teamwork and Leadership</li>
+                <li>Analytical Thinking</li>
+                <li>Communication and Collaboration</li>
+                <li>Ethical Standards</li>
+                <li>Problem-solving</li>
+                <li>Adaptability</li>
+            </ul>
         </div>
     </div>
 
-    <div class="resume-section">
-        <h2>IT SKILLS (Learning)</h2>
+    <div class="resume-section it-skills">
+        <h2>IT Skills (Learning)</h2>
         <ul>
             <li>Python</li>
+            <li>Git Basics</li>
             <li>SQL (as part of Meta Certificate)</li>
-            <li>Git (as part of Meta Certificate)</li>
             <li>Django (as part of Meta Certificate)</li>
             <li>Back-End Development (as part of Meta Certificate)</li>
         </ul>
